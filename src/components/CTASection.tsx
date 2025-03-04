@@ -1,18 +1,29 @@
 
+import { motion } from "framer-motion";
+
 export const CTASection = () => {
   return (
     <section className="px-4 py-16 max-w-5xl mx-auto">
-      <div className="glassmorphism rounded-2xl p-8 md:p-12 text-center animate-scale-in">
+      <motion.div 
+        initial={{ opacity: 0, scale: 0.95 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        className="glassmorphism rounded-2xl p-8 md:p-12 text-center"
+      >
         <span className="feature-chip animate-pulse-subtle">🎉 Limited Time Offer</span>
-        <h2 className="text-2xl md:text-3xl font-bold mt-4 mb-3 animate-fade-up [animation-delay:200ms]">
+        <h2 className="text-2xl md:text-3xl font-bold mt-4 mb-3 gradient-heading">
           Join the Free Beta – 100 Free Email Validations!
         </h2>
         
-        <p className="text-muted-foreground max-w-2xl mx-auto mb-8 animate-fade-up [animation-delay:400ms]">
+        <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
           No credit card required. We won't spam. Just better email performance for you.
         </p>
         
-        <div className="animate-fade-up [animation-delay:600ms]">
+        <motion.div 
+          whileHover={{ scale: 1.03 }}
+          whileTap={{ scale: 0.98 }}
+        >
           <a 
             href="https://tally.so/r/mVDLBj" 
             target="_blank" 
@@ -21,8 +32,21 @@ export const CTASection = () => {
           >
             Claim Your Spot
           </a>
+        </motion.div>
+
+        <div className="mt-6 flex justify-center">
+          <div className="flex -space-x-2">
+            {[1, 2, 3, 4].map((i) => (
+              <div key={i} className="w-8 h-8 rounded-full bg-gray-200 border-2 border-white flex items-center justify-center text-xs">
+                {i}
+              </div>
+            ))}
+          </div>
+          <div className="ml-3 text-sm flex items-center text-gray-600">
+            <span>Join 173 others today!</span>
+          </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

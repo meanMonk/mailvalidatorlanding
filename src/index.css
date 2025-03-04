@@ -1,11 +1,10 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 210 40% 98%;
+    --background: 252 100% 99%;
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -14,16 +13,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 47.4% 11.2%;
 
-    --primary: 221.2 83% 53.3%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 270 76% 53%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
+    --secondary: 280 25% 95%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
+    --accent: 280 25% 95%;
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
@@ -31,7 +30,7 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 221.2 83% 53.3%;
+    --ring: 270 76% 53%;
 
     --radius: 0.8rem;
   }
@@ -75,6 +74,9 @@
   body {
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
+    background-image: url('data:image/svg+xml;utf8,<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="1" fill="%23E0D7FF" /></svg>');
+    background-size: 20px 20px;
+    background-position: 0 0;
   }
 }
 
@@ -84,24 +86,40 @@
   }
   
   .glassmorphism {
-    @apply backdrop-blur-md bg-white/70 dark:bg-gray-900/70 border border-gray-200 dark:border-gray-800;
+    @apply backdrop-blur-md bg-white/80 dark:bg-gray-900/70 border border-gray-200 dark:border-gray-800 shadow-sm;
   }
   
   .section-title {
     @apply text-xl sm:text-2xl font-semibold tracking-tight mb-3;
   }
   
+  .gradient-heading {
+    @apply bg-gradient-to-r from-purple-600 via-fuchsia-500 to-pink-500 bg-clip-text text-transparent;
+  }
+  
+  .purple-gradient-bg {
+    @apply bg-gradient-to-br from-purple-600 via-purple-500 to-fuchsia-500;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-md hover:-translate-y-1;
+  }
+  
   .button-primary {
-    @apply inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-md transition-all duration-300 hover:shadow-lg hover:bg-primary/90 active:scale-[0.98];
+    @apply inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-md transition-all duration-300 hover:shadow-lg hover:bg-primary/90 active:scale-[0.98];
   }
   
   .subtle-glow {
-    box-shadow: 0 0 15px rgba(59, 130, 246, 0.15);
+    box-shadow: 0 0 15px rgba(139, 92, 246, 0.2);
     transition: box-shadow 0.3s ease-in-out;
   }
   
   .subtle-glow:hover {
-    box-shadow: 0 0 25px rgba(59, 130, 246, 0.25);
+    box-shadow: 0 0 25px rgba(139, 92, 246, 0.35);
+  }
+  
+  .feature-card {
+    @apply p-6 rounded-xl bg-white border border-purple-100 shadow-sm transition-all duration-300 hover:shadow-md hover:border-purple-200;
   }
 }
 

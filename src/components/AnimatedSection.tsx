@@ -19,7 +19,7 @@ export const AnimatedSection = ({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
       transition={{ 
-        duration: 0.6, 
+        duration: 0.7, 
         ease: [0.22, 1, 0.36, 1],
         delay: delay / 10
       }}
