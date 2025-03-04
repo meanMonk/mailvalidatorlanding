@@ -23,8 +23,12 @@ export const BenefitsSection = () => {
   return (
     <section className="px-4 py-16 max-w-5xl mx-auto my-8">
       <div className="text-center mb-12">
-        <span className="feature-chip">💡 Benefits</span>
-        <h2 className="section-title text-2xl md:text-3xl font-semibold mt-4 gradient-heading">Why This?</h2>
+        <h2 className="text-2xl md:text-3xl font-semibold mt-4 ">
+          💡
+          <span className="gradient-heading ml-2">
+            Why This?
+          </span>
+        </h2>
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -45,6 +49,18 @@ export const BenefitsSection = () => {
           </motion.div>
         ))}
       </div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.5 }}
+        className="mt-16 text-center"
+      >
+        <p className="text-lg text-muted-foreground">
+          Built for <span className="font-semibold">founders, marketers, and anyone who sends emails.</span>
+        </p>
+      </motion.div>
     </section>
   );
 };

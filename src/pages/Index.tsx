@@ -32,7 +32,7 @@ const Index = () => {
         <ProblemsSection />
       </AnimatedSection>
       
-      <AnimatedSection delay={2}>
+      <AnimatedSection delay={1}>
         <HowItWorks />
       </AnimatedSection>
       
@@ -40,15 +40,11 @@ const Index = () => {
         <BenefitsSection />
       </AnimatedSection>
       
-      <AnimatedSection delay={4}>
+      <AnimatedSection delay={3}>
         <CTASection />
       </AnimatedSection>
-      
-      <AnimatedSection delay={5}>
-        <FeaturesSection />
-      </AnimatedSection>
-      
-      <AnimatedSection delay={6}>
+
+      <AnimatedSection delay={3}>
         <FooterSection />
       </AnimatedSection>
     </motion.div>

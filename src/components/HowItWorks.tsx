@@ -21,10 +21,14 @@ export const HowItWorks = () => {
   ];
 
   return (
-    <section className="px-4 py-16 max-w-5xl mx-auto">
+    <section className="px-4 py-8 max-w-5xl mx-auto">
       <div className="text-center mb-12">
-        <span className="feature-chip">🔍 Simple Process</span>
-        <h2 className="text-2xl md:text-3xl font-semibold mt-4 gradient-heading">How It Works</h2>
+        <h2 className="text-2xl md:text-3xl font-semibold mt-4 ">
+          🔍
+          <span className="gradient-heading ml-2">
+            How It Works
+          </span>
+        </h2>
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

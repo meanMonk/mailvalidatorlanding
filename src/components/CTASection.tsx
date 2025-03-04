@@ -1,10 +1,11 @@
 
 import { motion } from "framer-motion";
+import TallyEmbed from "./TallyEmbed";
 
 export const CTASection = () => {
   return (
-    <section className="px-4 py-16 max-w-5xl mx-auto">
-      <motion.div 
+    <section className="px-4 py-16 max-w-5xl mx-auto" id="ctasection">
+      <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
@@ -20,13 +21,15 @@ export const CTASection = () => {
           No credit card required. We won't spam. Just better email performance for you.
         </p>
         
-        <motion.div 
+        <TallyEmbed />
+
+        {/* <motion.div
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.98 }}
         >
-          <a 
-            href="https://tally.so/r/mVDLBj" 
-            target="_blank" 
+          <a
+            href="https://tally.so/r/mVDLBj"
+            target="_blank"
             rel="noopener noreferrer"
             className="button-primary subtle-glow"
           >
@@ -45,7 +48,7 @@ export const CTASection = () => {
           <div className="ml-3 text-sm flex items-center text-gray-600">
             <span>Join 173 others today!</span>
           </div>
-        </div>
+        </div> */}
       </motion.div>
     </section>
   );

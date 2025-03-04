@@ -52,11 +52,16 @@ export const WaitlistHero = () => {
           <span className="feature-chip">🚀 Email List Cleaner — Beta Access</span>
         </motion.div>
         
-        <motion.h1 
+        <motion.h3
           variants={itemVariant}
-          className="text-3xl md:text-5xl font-bold tracking-tight mt-4 mb-6 space-y-2"
+          className="text-3xl md:text-4xl font-bold tracking-tight mt-4 mb-6 space-y-2"
         >
           <span className="block">Your Emails Deserve to Be Opened.</span>
+        </motion.h3>
+        <motion.h1
+          variants={itemVariant}
+          className="text-3xl md:text-5xl font-bold tracking-tight mt-4 mb-6 space-y-2 italic"
+        >
           <span className="block gradient-heading">
             Stop Wasting $$$ on Bad Email Lists.
           </span>
@@ -74,8 +79,7 @@ export const WaitlistHero = () => {
           className="mt-10 flex flex-col sm:flex-row justify-center gap-4"
         >
           <a 
-            href="https://tally.so/r/mVDLBj" 
-            target="_blank" 
+            href="#ctasection" 
             rel="noopener noreferrer"
             className="button-primary subtle-glow"
           >
