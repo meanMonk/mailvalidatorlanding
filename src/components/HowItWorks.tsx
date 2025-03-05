@@ -21,7 +21,7 @@ export const HowItWorks = () => {
   ];
 
   return (
-    <section className="px-4 py-8 max-w-5xl mx-auto">
+    <section className="p-4 max-w-5xl mx-auto">
       <div className="text-center mb-12">
         <h2 className="text-2xl md:text-3xl font-semibold mt-4 ">
           🔍

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export const FooterSection = () => {
   return (
-    <footer className="mt-16 px-4 py-12 max-w-5xl mx-auto">
+    <footer className="mt-16 px-4 py-2 max-w-5xl mx-auto">
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

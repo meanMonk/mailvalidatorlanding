@@ -4,7 +4,7 @@ import TallyEmbed from "./TallyEmbed";
 
 export const CTASection = () => {
   return (
-    <section className="px-4 py-16 max-w-5xl mx-auto" id="ctasection">
+    <section className="px-4 py-4 max-w-5xl mx-auto" id="ctasection">
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         whileInView={{ opacity: 1, scale: 1 }}
@@ -18,7 +18,7 @@ export const CTASection = () => {
         </h2>
         
         <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
-          No credit card required. We won't spam. Just better email performance for you.
+          We won't spam. Just better email performance for you.
         </p>
         
         <TallyEmbed />

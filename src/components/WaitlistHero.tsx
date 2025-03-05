@@ -41,7 +41,8 @@ export const WaitlistHero = () => {
   };
   
   return (
-    <section className="px-4 pt-16 pb-8 md:pt-24 md:pb-16 max-w-5xl mx-auto text-center">
+    <section className="px-4 pt-16 pb-8 md:pt-24 md:pb-16 max-w-5xl mx-auto text-center
+    ">
       <motion.div 
         variants={staggerChildren}
         initial="hidden"
@@ -49,21 +50,25 @@ export const WaitlistHero = () => {
         className="space-y-5"
       >
         <motion.div variants={itemVariant}>
-          <span className="feature-chip">🚀 Email List Cleaner — Beta Access</span>
+          <span className="feature-chip text-xl">🚀 Exciting News!</span>
         </motion.div>
         
         <motion.h3
           variants={itemVariant}
-          className="text-3xl md:text-4xl font-bold tracking-tight mt-4 mb-6 space-y-2"
+          className="text-2xl md:text-3xl font-semibold mb-8 text-center"
         >
           <span className="block">Your Emails Deserve to Be Opened.</span>
         </motion.h3>
         <motion.h1
           variants={itemVariant}
-          className="text-3xl md:text-5xl font-bold tracking-tight mt-4 mb-6 space-y-2 italic"
+          className="text-3xl md:text-5xl font-bold tracking-tight mt-4 mb-6 space-y-2 italic space-x-2"
         >
-          <span className="block gradient-heading">
-            Stop Wasting $$$ on Bad Email Lists.
+          <span className="gradient-heading mx-1">
+            Stop Wasting
+          </span>
+          💰💰💰
+          <span className="gradient-heading mx-1">
+            on Bad Email Lists.
           </span>
         </motion.h1>
         
@@ -74,12 +79,22 @@ export const WaitlistHero = () => {
           Clean Your Email List in Minutes. No setup, no headaches—just better deliverability.
         </motion.p>
         
-        <motion.div 
+
+
+        <h3 className="text-xl font-semibold mb-4">
+          <span className="gradient-heading">💡 We fix it.</span>
+        </h3>
+        <h3 className="text-md mb-4">
+          Upload your list → We clean it → You send with confidence.
+        </h3>
+
+
+        <motion.div
           variants={itemVariant}
           className="mt-10 flex flex-col sm:flex-row justify-center gap-4"
         >
-          <a 
-            href="#ctasection" 
+          <a
+            href="#ctasection"
             rel="noopener noreferrer"
             className="button-primary subtle-glow"
           >
@@ -87,18 +102,6 @@ export const WaitlistHero = () => {
           </a>
         </motion.div>
 
-        <motion.div 
-          variants={itemVariant}
-          className="mt-4 text-sm text-muted-foreground"
-        >
-          <span className="inline-flex items-center">
-            <svg className="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" 
-                stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-            No Credit Card Required!
-          </span>
-        </motion.div>
       </motion.div>
     </section>
   );
