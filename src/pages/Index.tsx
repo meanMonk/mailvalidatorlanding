@@ -24,7 +24,7 @@ const Index = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
-      className="min-h-screen  md:w-10/12 mx-auto"
+      className="min-h-screen  md:w-[700px] mx-auto"
     >
       <WaitlistHero />
       

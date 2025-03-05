@@ -80,9 +80,11 @@ export const WaitlistHero = () => {
         <h3 className="text-xl font-semibold mb-4">
           <span className="">💡 We fix it.</span>
         </h3>
-        <h3 className="text-md mb-4">
-          Upload your list → We clean it → You send with confidence.
-        </h3>
+        <div className="flex justify-center gap-2 text-md mb-4 items-center">
+          <span className="p-4 flex items-center justify-center flex-nowrap w-4 h-4 bg-primary/15 rounded-full text-primary text-lg ">1</span> Upload your list
+          <span className="p-4 flex items-center justify-center flex-nowrap w-4 h-4 bg-primary/15 rounded-full text-primary text-lg ">2</span> We clean it
+          <span className="p-4 flex items-center justify-center flex-nowrap w-4 h-4 bg-primary/15 rounded-full text-primary text-lg ">3</span>You send with confidence.
+        </div>
 
 
         <motion.div
