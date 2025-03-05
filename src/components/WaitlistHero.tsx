@@ -63,13 +63,9 @@ export const WaitlistHero = () => {
           variants={itemVariant}
           className="text-3xl md:text-5xl font-bold tracking-tight mt-4 mb-6 space-y-2 italic space-x-2"
         >
-          <span className="gradient-heading mx-1">
-            Stop Wasting
-          </span>
-          💰💰💰
-          <span className="gradient-heading mx-1">
-            on Bad Email Lists.
-          </span>
+          Stop Wasting 💰💰💰 on Bad Email Lists.
+          {/* <span className="gradient-heading mx-1">
+          </span> */}
         </motion.h1>
         
         <motion.p 
@@ -82,7 +78,7 @@ export const WaitlistHero = () => {
 
 
         <h3 className="text-xl font-semibold mb-4">
-          <span className="gradient-heading">💡 We fix it.</span>
+          <span className="">💡 We fix it.</span>
         </h3>
         <h3 className="text-md mb-4">
           Upload your list → We clean it → You send with confidence.
